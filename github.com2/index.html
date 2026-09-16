@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Text Link Card</title>
+
+  <style>
+    :root {
+      color-scheme: light dark;
+      --surface: #ffffff;
+      --surface-hover: #f0f0f0;
+      --text: #202020;
+      --muted: #777777;
+      --border: #dedede;
+      --border-hover: #c7c7c7;
+      --focus: #2783de;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --surface: #202020;
+        --surface-hover: #383836;
+        --text: #ffffff;
+        --muted: rgba(255, 255, 255, 0.65);
+        --border: rgba(255, 255, 255, 0.2);
+        --border-hover: rgba(255, 255, 255, 0.35);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: auto;
+      display: grid;
+      padding: 0;              /* 24px → 0 */
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: transparent;
+    }
+
+    .link-card {
+      display: block;
+      width: 100%;              /* min(100%, 720px) → 100% */
+      height: 100%;
+      box-sizing: border-box;
+      padding: 20px 22px;
+      color: var(--text);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-decoration: none;
+      transition:
+        background-color 160ms ease,
+        border-color 160ms ease,
+        transform 160ms ease;
+    }
+
+    .link-card:hover {
+      background: var(--surface-hover);
+      border-color: var(--border-hover);
+      transform: translateY(-1px);
+    }
+
+    .link-card:focus-visible {
+      outline: 3px solid color-mix(in srgb, var(--focus) 45%, transparent);
+      outline-offset: 3px;
+    }
+
+    .title {
+      display: block;
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 8px;
+    }
+
+    .url {
+      display: block;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.4;
+      overflow-wrap: anywhere;
+    }
+  </style>
+</head>
+
+<body>
+  <a
+    class="link-card"
+    href="https://github.com/google-gemini/gemini-cli"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="github.com"
+  >
+    <span class="title">github.com</span>
+    <span class="url">https://github.com/google-gemini/gemini-cli</span>
+  </a>
+</body>
+  <a
+</html>
