@@ -1,1 +1,1 @@
-"https://prompts.chat/
+https://prompts.chat/
