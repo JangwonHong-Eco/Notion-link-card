@@ -7,7 +7,7 @@ href="https://prompts.chat/"
 href="https://www.naver.com/"
 ​
 2. 박스 안 제목
-<span class="title">prompts.chat 공식 사이트</span>
+<span class="title">prompts.chat</span>
 ​
 원하는 문장으로 바꾸면 됩니다.
 <span class="title">내가 자주 쓰는 AI 프롬프트 사이트</span>
